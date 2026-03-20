@@ -244,7 +244,7 @@ class ASTGCN_submodule(nn.Module):
     def forward(self, x):
         '''
         :param x: (B, N_nodes, F_in, T_in)
-        :return: (B, N_nodes, T_out)
+        :return: (B, N_nodes, T_out) #...
         '''
         for block in self.BlockList:
             x = block(x)
